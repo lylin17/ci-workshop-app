@@ -40,5 +40,5 @@ ARG user
 RUN useradd ${user:-root} -g root || true
 USER ${user:-root}
 
-EXPOSE 8080
+EXPOSE 8000
 CMD ["/home/ci-workshop-app/bin/start_server.sh"]
